@@ -141,7 +141,7 @@ raw_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{curre
 st.image(
     raw_url,
     caption=make_caption(current_file),
-    use_column_width=True
+    width="stretch"
 )
 
 # --------------------------------------------------
@@ -163,7 +163,7 @@ if st.session_state["mini_view"]:
             col.image(
                 f"https://raw.githubusercontent.com/{username}/{repo_name}/main/{file}",
                 caption=make_caption(file),
-                use_column_width=True
+                width="stretch"
             )
             display_index += 1
 
